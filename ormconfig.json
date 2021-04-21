@@ -1,0 +1,20 @@
+[
+    {
+        "name": "default",
+        "type": "sqlite",
+        "database": "./src/database/dev.sqlite3",
+        "migrations": ["./src/database/migrations/*.ts"],
+        "entities": ["./src/database/entities/**.ts"],
+        "cli": {
+            "migrationsDir": "./src/database/migrations"
+        }
+    },{
+        "name": "production",
+        "type": "sqlite",
+        "database": "./src/database/dev.sqlite3",
+        "migrations": ["./src/database/migrations/*.ts"],
+        "cli": {
+            "migrationsDir": "src/database/migrations"
+        }
+    }
+]
