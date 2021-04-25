@@ -1,16 +1,11 @@
-import express from "express";
 import dotenv from 'dotenv';
+import { http } from './http';
 dotenv.config()
 
-import "./database";
-import { routes } from './routes'
+import "./websocket/client";
+import "./websocket/admin";
 
-const app = express();
 const port = process.env.PORT
-
-app.use(express.json());
-app.use(routes);
-
-app.listen(port,()=>{
+http.listen(port,()=>{
     console.log(`Servidor inicializado em http://localhost:${port}`)
 });

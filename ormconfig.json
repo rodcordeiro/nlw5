@@ -1,5 +1,4 @@
-[
-    {
+{
         "name": "default",
         "type": "sqlite",
         "database": "./src/database/dev.sqlite3",
@@ -8,13 +7,4 @@
         "cli": {
             "migrationsDir": "./src/database/migrations"
         }
-    },{
-        "name": "production",
-        "type": "sqlite",
-        "database": "./src/database/dev.sqlite3",
-        "migrations": ["./src/database/migrations/*.ts"],
-        "cli": {
-            "migrationsDir": "src/database/migrations"
-        }
     }
-]
