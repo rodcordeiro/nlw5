@@ -25,7 +25,7 @@ const http = createServer(app); // Criando o protocolo HTTP
 const io = new Server(http); // Criando o protocolo WS (websocket)
 
 io.on("connection",(socket: Socket)=>{
-    
+        
 })
 
 
