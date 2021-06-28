@@ -2,7 +2,6 @@ import { io } from "../http"
 import { ConnectionsService } from "../services/ConnectionsServices";
 import { UserService } from "../services/UserService";
 import { MessagesServices } from "../services/MessagesServices";
-import { copyFileSync } from "node:fs";
 
 interface IParams{
     text: string;
